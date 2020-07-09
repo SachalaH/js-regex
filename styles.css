@@ -22,3 +22,28 @@ input{
     border: 3px solid #ccc;
     outline: none !important;
 }
+
+/* validation styles */
+input.valid{
+    border-color: #36cc36;
+}
+
+input.invalid{
+    border-color:rgba(241, 30, 30, 0.931);
+}
+
+input + p{
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: rgba(241, 30, 30, 0.931);
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 15px;
+}
